@@ -1,6 +1,33 @@
+# Node.js 관련
 node_modules/
+*.log
+package-lock.json
+yarn.lock
+frontend/fine-tuning-chatbot/node_modules/
+frontend/fine-tuning-chatbot/.next*
+
+# Build output
 dist/
 build/
+
+# 환경 설정 파일
 .env
-*.log
-frontend/fine-tuning-chatbot/node_modules/
+.env.*  # .env.local, .env.development 등
+
+# 시스템 파일
+.DS_Store
+Thumbs.db
+
+# IDE 및 에디터 설정 파일
+.vscode/
+.idea/
+*.swp
+
+# 테스트 커버리지
+coverage/
+
+# 로컬 서버에서 생성된 임시 파일
+.next/
+.out/
+.vercel/
+.firebase/
